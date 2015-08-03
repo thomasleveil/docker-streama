@@ -1,0 +1,3 @@
+[submodule "streama"]
+	path = streama
+	url = https://github.com/dularion/streama.git
