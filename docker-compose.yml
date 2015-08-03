@@ -1,3 +1,10 @@
+smtp:
+    image: ryangraham/postfix-mailgun
+    environment:
+        # Get your credentials at https://mailgun.com
+        MG_USER: xxxxx
+        MG_PASS: xxxxx
+
 mysql:
     image: mysql:5.6
     environment:
@@ -15,3 +22,4 @@ web:
     - 80:8080
     links:
     - mysql
+    - smtp
